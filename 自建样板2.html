@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 00;
+        height: 100vh;
+        background-color: #eee;
+      }
+      /* * {
+        border: 1px solid black;
+      } */
+      .baise {
+        background-color: rgb(206, 202, 197);
+      }
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .huangse {
+        background-color: rgb(204, 201, 191);
+      }
+      .mg8{
+        margin: 12px;
+      }
+      .mgr8{
+        margin-right: 8px;
+      }
+      .mgt8{
+        margin-top: 8px;
+      }
+      li{
+        list-style: none;
+      }
+      a{
+        font-size: 23px;
+        color: #4115df;
+        text-decoration: none;
+      }
+      .lanse{
+        background-color: #33f;
+      }
+      .heise{
+        background-color: black;
+      }
+      img{
+        /* 文字图片对齐：中间 */
+        vertical-align: middle;
+      }
+      .daohang{
+        font-size: 23px;
+        margin: 20px;
+        border-bottom: 1px solid #999;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .dhttp{
+        height: 30px;
+      }
+      .wzjz{
+        text-align: center;
+      }
+      .lvse{
+        background-color: darkgreen;
+      }
+      .sousuojian{
+        border-radius: 0 20px 20px 0;
+      }
+      .sousuokuang{
+        border-radius: 20px 0 0 20px;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px;" class="heise">
+    <!--头像栏-->
+    <div style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;"
+        class="flex lanse">
+      <img src="./微信图片_20230430170316.jpg"
+              style="height: 40px;">
+      <!--名字-->
+      <div style="color: #eee; font-size:23px">焦涛创建</div>
+    </div>
+      <!--导航栏-->
+      <div class="flex1 heise">
+        <div class="daohang flex1">
+          <a href="#"> <img src="./微信图片_20230428154315.jpg" class="dhttp"> 页面1</a></div>
+        <div class="daohang flex1">
+          <a href="#"> <img src="./微信图片_20230428154315.jpg" class="dhttp"> 页面2</a></div>
+        <div class="daohang flex1">
+          <a href="#"> <img src="./微信图片_20230428154315.jpg" class="dhttp"> 页面3</a></div>
+        <div class="daohang flex1">
+          <a href="#"> <img src="./微信图片_20230428154315.jpg" class="dhttp"> 页面4</a></div>
+        <div class="daohang flex1">
+          <a href="#"> <img src="./微信图片_20230428154315.jpg" class="dhttp"> 页面5</a></div>
+        </div>
+    </div>
+    <!--主区域-->
+    <div class="flex1 flex column">
+      <!--头部栏-->
+      <div style="height: 60px" class="baise wzjz">
+      <!--搜索框-->
+      <div class="flex"
+      上边距和左边距
+       style="margin-top: 12px;
+              margin-left:100px;">
+        <input style="height: 30px; width: 800px;" class="sousuokuang">
+        <button style="height: 35px; width: 60px;" class="lvse sousuojian">
+         <div style="color: #eee;" class="wzjz">搜索</div>
+        </button>
+      </div>
+      </div>
+      <!--内容区-->
+      <div class="flex1 flex">
+        <!--左区-->
+        <div style="flex: 3" class="flex column mg8">
+          <!--数据区-->
+          <div class="flex">
+            <div style="height: 100px" class="flex1 huangse mgr8">
+            <img src="./微信图片_20230430170316.jpg"
+                style="height: 100px;
+                width: 167px;">
+            </div>
+            <div style="height: 100px" class="flex1 huangse mgr8">没想好内容</div>
+            <div style="height: 100px" class="flex1 huangse mgr8">没想好内容</div>
+            <div style="height: 100px" class="flex1 huangse mgr8">没想好</div>
+          </div>
+          <!--列表区-->
+        </div<div class="flex column">
+            <div style="height: 160px" class="mgt8 baise wzjz">网站开发联系微信:jt5863</div>
+            <div style="height: 160px" class="mgt8 baise">没想好内容</div>
+            <div style="height: 160px" class="mgt8 baise">没想好</div>
+          </div>
+        <!--右区-->
+        <div style="flex: 1" class="mgr8 mgt8">
+          <!--消息区-->
+          <div style="height: 150px" class="baise">没想好</div>
+          <!--提示区-->
+          <div style="height: 300px" class="mgt8 baise">没想好</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
